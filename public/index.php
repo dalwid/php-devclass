@@ -1,4 +1,4 @@
-<?php require $_SERVER['DOCUMENT_ROOT'] . '/../app/functions/pages.php'; ?>
+<?php require './app/functions/pages.php'; ?>
 <!doctype html>
 <html lang="en">
 <head>
