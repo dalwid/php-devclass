@@ -1,4 +1,4 @@
-<?php require $_SERVER['DOCUMENT_ROOT'] . '/../app/functions/pages.php';?>
+<?php require $_SERVER['DOCUMENT_ROOT'] . '/../app/functions/pages.php'; ?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -16,9 +16,15 @@
 </head>
 
 <body>
-    <div class="container">
-        <?php require load(); ?>
-    </div>
+<div class="container">
+    <?php
+    try {
+        require load();
+    } catch (Exception $e) {
+        echo $e->getMessage();
+    }
+    ?>
+</div>
 </body>
 
 </html>
